@@ -19,8 +19,6 @@ const player2 = async (self, playerInfo) => {
   self.player2.uuid = playerInfo.playerId
   self.player2.position.set(playerInfo.x, playerInfo.y, playerInfo.z)
 
-  
-  
   self.player2.traverse(child => {
     if (child.isMesh) {
       child.castShadow = child.receiveShadow = true
@@ -43,52 +41,6 @@ const player2 = async (self, playerInfo) => {
   // self.player2.body.setAngularFactor(0, 0, 0)
   // self.player2.body.setFriction(0)
 
-  
-  
-  // self.player2.body.setCollisionFlags(2)
-  
-  // // self.player2.body.setVelocityX(playerInfo.x)
-  // // self.player2.body.setVelocityY(playerInfo.y)
-  // // self.player2.body.setVelocityZ(playerInfo.z)
-
-
-
-  // self.player2.position.set(playerInfo.x, playerInfo.y, playerInfo.z)
-
-  // self.player2.body.needUpdate = true
-
-  // // this will run only on the next update if body.needUpdate = true
-  // self.player2.body.on.update(() => {
-  //   // set body back to dynamic
-  //   self.player2.body.setCollisionFlags(0)
-
-  //   // if you do not reset the velocity and angularVelocity, the object will keep it
-    
-  //   self.player2.body.applyForce(500, 10, 0)
-    
-  //   self.player2.body.setVelocity(0, 0, 0)
-  //   self.player2.body.setAngularVelocity(0, 0, 0)
-
-  // })
-
-  // // self.player2.body.setCollisionFlags(2)
-
-  // // set the new position
-  // self.player2.body.needUpdate = true
-
-  // // this will run only on the next update if body.needUpdate = true
-  // self.player2.body.on.update(() => {
-  //   // set body back to dynamic
-  //   self.player2.body.setCollisionFlags(0)
-
-  //   // if you do not reset the velocity and angularVelocity, the object will keep it
-  //   self.player2.body.setVelocity(0, 0, 0)
-  //   self.player2.body.setAngularVelocity(0, 0, 0)
-  // })
-
-
-
-
   //   self.camera.lookAt(self.player2.position);
 
   // animations
@@ -97,7 +49,6 @@ const player2 = async (self, playerInfo) => {
     self.player2.animation.add(animation.name, animation)
   })
   self.player2.animation.play('Idle')
-
 
   //   // Collisions
   //   self.player2.body.on.collision((otherObject, event) => {
