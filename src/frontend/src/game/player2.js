@@ -70,18 +70,6 @@ const player2 = async (self, playerInfo) => {
   //   self.player2.body.setAngularVelocity(0, 0, 0)
 
   // })
-  
-    console.log('hola')
-
-
-
-
-
-
-
-
-
-
 
   // // self.player2.body.setCollisionFlags(2)
 
